@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            My app
+        </title>
+    </head>
+    <body>
+      Hello guys
+      {% for f in myfriends %}
+      <h2>{{f}}</h2>
+      {% endfor %}
+      <form method="POST" action="/submit" enctype="multipart/form-data">
+        <input type="text" name="username" placeholder="Enter your name">
+        <input type="file" name="userfile">
+        <input type="submit">      
+     </form>
+    </body>
+
+</html>
