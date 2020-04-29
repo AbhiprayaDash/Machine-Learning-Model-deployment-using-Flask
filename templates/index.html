@@ -1,19 +1,19 @@
 <html>
     <head>
         <title>
-            My app
+            Neural Style Transfer
         </title>
     </head>
     <body>
-      Hello guys
-      {% for f in myfriends %}
-      <h2>{{f}}</h2>
-      {% endfor %}
+      <h1> Neural Style Transfer </h1>
       <form method="POST" action="/submit" enctype="multipart/form-data">
-        <input type="text" name="username" placeholder="Enter your name">
-        <input type="file" name="userfile">
+        <input type="file" name="userfile" placeholder="your image">
         <input type="submit">      
      </form>
+     {% if your_image %}
+        <img src={{your_image}}>
+        <h1>this is the generated image{{your_image}}</h1>
+     {% endif %}
     </body>
 
 </html>
